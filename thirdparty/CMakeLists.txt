@@ -52,3 +52,7 @@ set(SOL2_LUA_VERSION "5.1.5" CACHE STRING "The version of Lua used")
 # we build Lua manually
 set(SOL2_BUILD_LUA FALSE CACHE BOOL "Always build Lua, do not search for it in the system")
 add_subdirectory(sol2)
+
+add_library(cxxopts INTERFACE)
+target_include_directories(cxxopts INTERFACE cxxopts/include)
+add_library(cxxopts::cxxopts ALIAS cxxopts)

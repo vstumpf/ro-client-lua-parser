@@ -83,14 +83,12 @@ function main()
 			return false, msg
 		end
 		for k, v in pairs(DESC.unidentifiedDescriptionName) do
-            print(k, v)
 			result, msg = AddItemUnidentifiedDesc(ItemID, v)
 			if not result then
 				return false, msg
 			end
 		end
 		for k, v in pairs(DESC.identifiedDescriptionName) do
-            print(k, v)
 			result, msg = AddItemIdentifiedDesc(ItemID, v)
 			if not result then
 				return false, msg

@@ -1,5 +1,8 @@
 #include <iostream>
+
 #include <sol/sol.hpp>
+
+#include "args.hpp"
 
 int parseItemInfo(std::string filename) {
 	std::cout << "Parsing item info from " << filename << "\n";
@@ -37,19 +40,7 @@ int parseItemInfo(std::string filename) {
 }
 
 int main(int argc, const char** argv) {
-	std::cout << "Hello, from C++\n";
-	sol::state lua;
-	lua.open_libraries(sol::lib::base, sol::lib::package);
-	sol::protected_function_result result = lua.script("print('Hello from Lua')");
-	if (!result.valid()) {
-		sol::error err = result;
-		std::cout << err.what();
-	}
+	auto args = parseArguments(argc, argv);
 
-	if (argc < 2) {
-		std::cout << "Usage: " << argv[0] << " <filename>\n";
-		return 1;
-	}
-
-	return parseItemInfo(argv[1]);
+	return parseItemInfo(args.iteminfo_filename_);
 }
