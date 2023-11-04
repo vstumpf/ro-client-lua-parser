@@ -51,6 +51,7 @@ endif()
 set(SOL2_LUA_VERSION "5.1.5" CACHE STRING "The version of Lua used")
 # we build Lua manually
 set(SOL2_BUILD_LUA FALSE CACHE BOOL "Always build Lua, do not search for it in the system")
+set(SOL2_PLATFORM "x86" CACHE STRING "Target platform to compile for when building binaries (x86, x64)")
 add_subdirectory(sol2)
 
 add_library(cxxopts INTERFACE)

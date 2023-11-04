@@ -30,7 +30,7 @@ find_path(Readline_INCLUDE_DIR
 
 find_library(Readline_LIBRARY
     NAMES readline
-    HINTS ${Readline_ROOT_DIR}/lib
+    HINTS ${Readline_ROOT_DIR}/lib32
 )
 
 if(Readline_INCLUDE_DIR AND Readline_LIBRARY AND Ncurses_LIBRARY)
