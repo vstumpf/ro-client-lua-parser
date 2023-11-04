@@ -70,7 +70,70 @@ tbl = {
 		slotCount = 0,
 		ClassNum = 0,
 		costume = false
-	}
+	},
+	[1201] = {
+		unidentifiedDisplayName = "Dagger",
+		unidentifiedResourceName = "나이프",
+		unidentifiedDescriptionName = {
+			"Unknown Item, can be identified by using a ^6666CCMagnifier^000000."
+		},
+		identifiedDisplayName = "Knife",
+		identifiedResourceName = "나이프",
+		identifiedDescriptionName = {
+			"A simple knife.",
+			"Class:^6666CC Dagger^000000",
+			"Attack:^CC0000 17^000000",
+			"Weight:^009900 40^000000",
+			"Weapon Level:^009900 1^000000",
+			"Level Requirement:^009900 1^000000",
+			"Jobs:^6666CC Swordman, Mage, Archer, Merchant, Thief, Soul Linker and Ninja^000000"
+		},
+		slotCount = 3,
+		ClassNum = 1,
+		costume = false
+	},
+	[1204] = {
+		unidentifiedDisplayName = "Dagger",
+		unidentifiedResourceName = "나이프",
+		unidentifiedDescriptionName = {
+			"Unknown Item, can be identified by using a ^6666CCMagnifier^000000."
+		},
+		identifiedDisplayName = "Cutter",
+		identifiedResourceName = "커터",
+		identifiedDescriptionName = {
+			"A knife used for cutting enemies.",
+			"Class:^6666CC Dagger^000000",
+			"Attack:^CC0000 30^000000",
+			"Weight:^009900 50^000000",
+			"Weapon Level:^009900 1^000000",
+			"Level Requirement:^009900 1^000000",
+			"Jobs:^6666CC Swordman, Mage, Archer, Merchant, Thief, Soul Linker and Ninja^000000"
+		},
+		slotCount = 3,
+		ClassNum = 1,
+		costume = false
+	},
+	[19558] = {
+		unidentifiedDisplayName = "Hat",
+		unidentifiedResourceName = "캡",
+		unidentifiedDescriptionName = {
+			"Unknown Item, can be identified by using a ^6666CCMagnifier^000000."
+		},
+		identifiedDisplayName = "Costume Crow Hat",
+		identifiedResourceName = "까마귀모자",
+		identifiedDescriptionName = {
+			"A black Raven Cap that has black beak and feathers. It is so black.",
+			"VIT +1",
+			"Class:^6666CC Costume^000000",
+			"Location:^6666CC Upper^000000",
+			"Weight:^009900 0^000000",
+			"Level Requirement:^009900 1^000000",
+			"Jobs:^6666CC All classes^000000"
+		},
+		slotCount = 0,
+		ClassNum = 524,
+		costume = true
+	},
 }
 
 function main()
