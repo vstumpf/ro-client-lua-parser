@@ -57,3 +57,8 @@ add_subdirectory(sol2)
 add_library(cxxopts INTERFACE)
 target_include_directories(cxxopts INTERFACE cxxopts/include)
 add_library(cxxopts::cxxopts ALIAS cxxopts)
+
+include(FetchContent)
+
+FetchContent_Declare(json URL https://github.com/nlohmann/json/releases/download/v3.11.2/json.tar.xz)
+FetchContent_MakeAvailable(json)
